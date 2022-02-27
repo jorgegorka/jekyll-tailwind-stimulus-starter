@@ -1,7 +1,14 @@
 {% include header.html %}
+{% include menu.html %}
 
+{% if page.url == "/" %}
+<div class="absolute inset-0 -z-10">
+<img class="h-full w-full object-cover opacity-40" src="/assets/maria-psicologa-logrono.jpg" alt="Atención psicológica profesional en Logroño.">
+</div>
+{% endif %}
 <main class="max-w-3xl md:max-w-6xl lg:max-w-7xl mx-auto py-24 px-8">
   {{ content }}
 </main>
 
+{% include footer_info.html %}
 {% include footer.html %}

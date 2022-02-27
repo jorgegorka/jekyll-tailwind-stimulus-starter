@@ -1,0 +1,69 @@
+<div class="relative" data-controller="menu" data-menu-show-class="block" data-menu-hide-class="hidden">
+  <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+    <div class="flex w-full">
+      <div class="lg:w-1/3 flex justify-start">
+        <a href="/" class="flex items-center" title-"María Garcia psicóloga">
+          <img class="h-8 sm:h-10" src="/assets/logo-maria-garcia-psicologa.png" alt="María García - Psicóloga en Logroño" />
+          <p class="lg:w-2/3 ml-6 font-bold text-2xl text-green-800">María García</p>
+        </a>
+      </div>
+      <nav class="hidden md:w-full md:ml-10 md:flex md:justify-center md:items-center">
+        {% for item in site.data.menuitems.items %}
+          {% if page.url == item.url %}
+            <a href="{{item.url}}" title="{{item.title}}" class="text-xl font-medium border-b-2 border-green-600 text-green-600 hover:text-green-800 md:mr-4">
+          {% else %}
+            <a href="{{item.url}}" title="{{item.title}}" class="text-lg font-medium text-green-800 hover:text-green-600 hover:border-b-2 hover:border-green-600 md:mr-4">
+          {% endif %}
+          {{ item.name }}
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+    <div class="-mr-2 -my-2 md:hidden">
+      <button data-action="click->menu#toggle" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+        <span class="sr-only">Abrir menú principal</span>
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div data-menu-target="mobile" class="hidden">
+    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right">
+      <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+        <div class="pt-5 pb-6 px-5">
+          <div class="flex items-center justify-between">
+            <div class="w-full">
+        <a href="/" class="flex items-center" title-"María Garcia psicóloga">
+          <img class="h-8 sm:h-10" src="/assets/logo-maria-garcia-psicologa.png" alt="María García - Psicóloga en Logroño" />
+          <p class="w-2/3 ml-6 font-bold text-2xl text-green-600">María García</p>
+        </a>
+            </div>
+            <div class="-mr-2">
+              <button data-action="click->menu#toggle" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Cerrar menú principal</span>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="py-6 px-5">
+          <nav class="grid grid-cols-2 gap-4">
+        {% for item in site.data.menuitems.items %}
+          {% if page.url == item.url %}
+            <a href="{{item.url}}" title="{{item.title}}" class="text-xl font-medium text-green-600 hover:text-green-800 md:mr-4">
+          {% else %}
+            <a href="{{item.url}}" title="{{item.title}}" class="text-lg font-medium text-green-800 hover:text-green-600 md:mr-4">
+          {% endif %}
+          {{ item.name }}
+          </a>
+        {% endfor %}
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+items:
+  - title: "María García Psicóloga en Logroño - Terapia de familia"
+    url: "/"
+    name: "Inicio"
+
+  - title: "Atención psicológica en Logroño y online - Terapia familiar."
+    url: "/servicios/"
+    name: "Servicios"
+
+  - title: "María García Psicóloga - Curriculum, cursos y experiencia."
+    url: "/acerca-de/"
+    name: "Acerca de"
+
+  - title: "Consulta psicológica en Logroño - María García Psicóloga"
+    url: "/contactar/"
+    name: "Contactar"

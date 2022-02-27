@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./**/*.{html,md,markdown}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        logo: '#B6CDBB',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
