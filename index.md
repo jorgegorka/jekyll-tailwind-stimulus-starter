@@ -31,7 +31,7 @@ Consulta psicológica en Logroño y online.
 
 <section class="mt-32 relative">
 <div class="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-<img class="w-full h-full object-cover rounded-lg shadow" src="/assets/terapia-de-familia.jpg" alt="">
+<img class="w-full h-full object-cover rounded-lg shadow" src="/assets/terapia-de-familia.jpg" alt="Terapia para familias y parejas en Logroño y online.">
 </div>
 <div class="relative py-12 sm:px-6 md:px-4 lg:px-8 lg:py-16">
 <div class="md:ml-auto md:w-1/2 md:pl-10">

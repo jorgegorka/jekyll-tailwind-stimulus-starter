@@ -11,7 +11,7 @@ description: "Política de privacidad de la web de María García psicóloga en 
     <span>protección de datos</span></h2> <p><strong>1. ¿Quién es el Responsable de tratamiento de sus datos?</strong> <br>
     El responsable de los tratamientos de datos referentes a los distintos
     procesos con respecto la gestión de nuestros usuarios, clientes o
-    proveedores es María García, con domicilio social en la Avenida Club Deportivo, 40-42, Oficina 5. 26006 LOGROÑO (La Rioja).
+    proveedores es María García, con domicilio social en la Avenida Club Deportivo, 40-42, Oficina 5. 26007 LOGROÑO (La Rioja).
     <br>
     A efectos de nuestra política de protección de datos el teléfono de contacto
     es 630 847 041 y el correo electrónico de contacto es info@mariagarciapsicologa.es</p> <p><strong>2. ¿Qué tipo de datos tenemos sobre su persona y cómo los hemos obtenido?</strong> <br>
